@@ -2,9 +2,9 @@
 
 ### Setup
 
-The Nest.js serve will need to be ran to enable the 'dynamic' data. cd into the api folder then run *nest start --watch*.
+The Nest.js serve will need to be ran to enable the 'dynamic' data. cd into the api folder then run *npm i* followed by *nest start --watch*.
 
-to Run the SPA, cd into 'add' while inside the root 'kliq' directory then run *npm run start* to serve the frontend.
+to Run the SPA, cd into 'add' while inside the root 'kliq' directory then run *npm i* followed by *npm run start* to serve the frontend.
 
 ### Improvements / considerations
 
