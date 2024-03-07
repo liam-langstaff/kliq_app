@@ -11,7 +11,9 @@ to Run the SPA, cd into 'add' while inside the root 'kliq' directory then run "*
 - A more comprehensive styles folder with typography and global stylesheets. Common styles etc.
 - An SVG component which uses <use xlink> syntax to serve up predefined svgs instead of the mess i made within the sidebar content.
 - No mobile design given, but a focus on mobile first development
-- In its current configuration, the sidebar will always be present, regardless of new routes, due to the structure and projection within the app.component.html. 
+- In its current configuration, the sidebar will always be present, regardless of new routes, due to the structure and projection within the app.component.html.
+- An interface folder would have been nice but I think I only made 1 so just exported within the table component
+- could of created a shared library to share types across different projects
 
 ### Notes
 
