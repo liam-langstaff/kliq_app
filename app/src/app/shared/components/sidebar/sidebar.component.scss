@@ -1,0 +1,28 @@
+@import "../../../../styles/variables/colours";
+
+.sidebar-nav {
+  background: $light-bg-grey;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav li {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .active {
+    background-color: $primary-neon;
+    color: #000;
+    border-radius: 35px;
+  }
+}
+
+.dropdown {
+  background-color: $light-bg-grey-darker;
+}
+
+.user-profile {
+  background-color: $light-bg-grey-darker;
+}

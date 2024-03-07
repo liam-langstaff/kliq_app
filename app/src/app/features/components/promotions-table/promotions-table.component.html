@@ -1,0 +1,57 @@
+<div class="kliq-promotions-table__wrapper">
+
+  @if(isLoading$ | async) {
+    <div class="loader-wrapper">
+      <span class="loader"></span>
+    </div>
+
+  } @else {
+    <div class="kliq-promotions-table__actions">
+
+    </div>
+    <hr>
+    <div class="kliq-promotions-table__table">
+      <table mat-table [dataSource]="dataSource">
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="discountType">
+          <th mat-header-cell *matHeaderCellDef> Discount Type </th>
+          <td mat-cell *matCellDef="let element"> {{element.discount.level}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="discountOff">
+          <th mat-header-cell *matHeaderCellDef> Discount Off </th>
+          <td mat-cell *matCellDef="let element"> {{getDiscountOffCell(element) }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="endDate">
+          <th mat-header-cell *matHeaderCellDef> End Date </th>
+          <td mat-cell *matCellDef="let element"> {{element.endDate | date:'dd/MM/yy'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="products">
+          <th mat-header-cell *matHeaderCellDef> Products </th>
+          <td mat-cell *matCellDef="let element"><span class="badge"  [ngClass]="getProductBadgeClass(element.productCode)"> {{element.productName}}</span> </td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Status </th>
+          <td mat-cell *matCellDef="let element"><span class="badge" [ngClass]="getStatusBadgeClass(element.status)">{{element.status}}</span></td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  }
+
+
+
+</div>
+
+
