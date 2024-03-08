@@ -10,8 +10,8 @@ import {
 } from "@angular/material/table";
 import {AsyncPipe, CurrencyPipe, DatePipe, NgClass} from "@angular/common";
 import {DiscountType} from "../../enums/promotions";
-import {ProductCodes} from "../../../shared/enums/product-codes";
-import {Status} from "../../../shared/enums/status";
+import {ProductCodes} from "../../../../shared/enums/product-codes";
+import {Status} from "../../../../shared/enums/status";
 import {BehaviorSubject, delay, Observable, of} from "rxjs";
 
 export interface PromotionElement {

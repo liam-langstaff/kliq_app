@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {PromotionsComponent} from "./features/views/promotions/promotions.component";
+import {PromotionsComponent} from "./features/promotions/views/promotions/promotions.component";
 
 export const routes: Routes = [{
   path: '',

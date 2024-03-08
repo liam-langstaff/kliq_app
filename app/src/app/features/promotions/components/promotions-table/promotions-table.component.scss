@@ -1,4 +1,4 @@
-@import "../../../../styles/variables/colours";
+@import "../../../../../styles/variables/colours";
 
 
 .badge-mealplan {
@@ -27,6 +27,8 @@
 .kliq-promotions-table__wrapper {
   background: #fff;
   padding: 20px;
+  border: 1px solid $light-bg-grey-darker;
+  border-radius: 20px;
 }
 
 ::ng-deep table.mat-mdc-table {
